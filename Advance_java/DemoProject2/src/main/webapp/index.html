@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>HTML REGISTRATION FORM</title>
+	<style>
+		body {
+			background: cyan;
+		}
+
+		table {
+			background: yellow;
+			margin:30px;
+		}
+
+		table,
+		tr,
+		td,
+		th {
+			border: 1px solid;
+		}
+	
+	</style>
+</head>
+
+<body >
+	<form action="servlet" method="POST">
+		<table>
+			<tr>
+				<th colspan="2">REGISTRATION FORM</th>
+			</tr>
+			<tr>
+				<td><label for="name">Name:</label></td>
+				<td><input type="text" name="first_name"></td>
+			</tr>
+			<tr>
+				<td><label for="branch" name ="branch">Branch:</label></td>
+				<td>
+					<select>
+						<option>CSE</option>
+						<option>ME</option>
+						<option>CE</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="semester" name="semester">Semester:</label></td>
+				<td>
+					<select>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="gender" name="gender">Gender:</label>
+				</td>
+				<td>
+					<input type="radio" name="male">
+					<label for="male">Male</label>
+					<input type="radio" name="female">
+					<label for="female">Female</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="hobby" name ="hobby">Hobby:</label>
+				</td>
+				<td>
+					<input type="checkbox" name="reading">
+					<label for="reading">Reading</label>
+					<input type="checkbox" name="playing">
+					<label for="playing">Playing</label>
+					<input type="checkbox" name="dancing">
+					<label for="dancing">Dancing</label>
+				</td>
+			</tr>
+			<tr>
+				<th colspan="2"><input type="submit" name="submit" value="Submit" ></th>                               
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

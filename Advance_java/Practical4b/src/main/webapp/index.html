@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Html Page</title>
+<style>
+	body{
+		background : cyan;
+	}
+	table{
+		background:yellow; 
+		margin:50px;
+	}
+	table,tr,td,th{
+		border: 1px solid;
+	}
+</style>
+</head>
+<body>
+	<form action="servlet" method="post">
+		<table>
+			<tr>
+				<th colspan="2">Html Page</th>
+			</tr>
+			<tr>
+				<td><label>Enter First Number </label></td>
+				<td><input type="number" name="fnumber"></td>
+			</tr>
+			<tr>
+				<td><label>Enter Second Number</label></td>
+				<td><input type="number" name="snumber"></td>
+			</tr>
+			<tr>
+				<td><label>Enter Third Number</label></td>
+				<td><input type="number" name="tnumber"></td>
+			</tr>
+			<tr>
+				<th colspan="2"><input type="submit" name="sub_btn" value="submit"></th>
+			</tr>
+		</table>		
+	</form>
+</body>
+</html>

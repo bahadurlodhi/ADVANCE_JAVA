@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Html Page</title>
+<style>
+	body{
+		background : cyan;
+	}
+	table{
+		background:yellow;
+		margin:50px;
+	}
+	table,tr,td,th{
+		border: 1px solid;
+	}
+</style>
+</head>
+<body>
+	<form action="servlet" method="post">
+		<table>
+			<tr>
+				<th colspan="2">Html Page</th>
+			</tr>
+			<tr>
+				<td><label>Name </label></td>
+				<td><input type="text" name="uname"></td>
+			</tr>
+			<tr>
+				<td><label>Age</label></td>
+				<td><input type="text" name="age"></td>
+			</tr>
+			<tr>
+				<th colspan="2"><input type="submit" name="sub_btn" value="submit"></th>
+			</tr>
+		</table>		
+	</form>
+</body>
+</html>
